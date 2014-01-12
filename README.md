@@ -10,7 +10,7 @@ RsdSimpleMonitor is a simple java program that I wrote to "monitor"  web applica
 
 ### Running the program
 
-1. Download the latest [RsdSimpleMonitor Jar](https://github.com/samadatoro/RsdSimpleMonitor) and rename it as simplemonitor.jar
+1. Download the latest [RsdSimpleMonitor Jar](https://github.com/samadatoro/RsdSimpleMonitor/tree/master/target/rsd-simple-monitor-0.0.1-SNAPSHOT-shaded.jar) and rename it as simplemonitor.jar
    
 2. Create a config.properties file as follow in the same directory where the jar is located.
 ```php
@@ -26,7 +26,7 @@ monitor.fromEmail=email@example.com
 #email subject
 monitor.emailSubject=Monitor Error Notification
 ```
-3. Run the program (you need to have Java installed on your computer to run it)
+3. Run the program
 
 ```bash
 java -jar simplemonitor.jar
@@ -45,7 +45,6 @@ Confirm that maven is installed by executing the following command
 
 ```bash
 mvn -v
-
 ```
 
 Once maven is step, you can follow these steps to install and run the program. Feel free to make changes
@@ -54,14 +53,12 @@ Once maven is step, you can follow these steps to install and run the program. F
 
 ```bash
 git clone https://github.com/samadatoro/RsdSimpleMonitor.git
-
 ```
 
 2. Execute the following command to compile, run the junit test and package the program as a jar.
 
 ```bash
 mvn package
-
 ```
 The Maven pom.xml is using the [Maven Shade plugin] (http://maven.apache.org/plugins/maven-shade-plugin/) to include the dependencies in the jar and make it executable.
 
@@ -70,6 +67,5 @@ The Maven pom.xml is using the [Maven Shade plugin] (http://maven.apache.org/plu
 4. Run the program
 
 ```bash
-java -jar target/rsd-simple-jar-xxx-shaded.jar
-
+java -jar target/rsd-simple-monitor-0.0.1-SNAPSHOT-shaded.jar
 ```
